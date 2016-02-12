@@ -8,10 +8,9 @@
  * Controller of the flightFareApp
  */
 angular.module('flightFareApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+    
+    $scope.fromDt = new Date();
+    $scope.toDt = new Date();
+
   });
