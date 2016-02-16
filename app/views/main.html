@@ -1,24 +1,24 @@
 <div class="jumbotron">
-  <form class="form-horizontal">
+  <form class="form-horizontal" ng-submit="searchFlight(formData)">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label">From</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" placeholder="Email">
+        <input type="text" class="form-control"  ng-model="formData.fromDest">
       </div>
     </div>
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label">To</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" placeholder="Email">
+        <input type="text" class="form-control" placeholder="NYC" ng-model="formData.toDest">
       </div>
     </div>
     
     <div class="form-group">
       <div style="display:inline-block; min-height:290px;">
-        <uib-datepicker ng-model="fromDt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+        <uib-datepicker ng-model="formData.fromDt" min-date="formData.minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
       </div>
       <div style="display:inline-block; min-height:290px;">
-        <uib-datepicker ng-model="toDt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+        <uib-datepicker ng-model="formData.toDt" min-date="formData.fromDt" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
       </div>
     </div>
 
