@@ -8,7 +8,8 @@
  * Controller of the flightFareApp
  */
 
-var apiKey=0;
+// var apiKey=0;
+var apiKey="AIzaSyAPCj0jDG3AlHWvHNVA6F_rtjX6WVfy8Ks";
 
 Date.prototype.toAPIdateString = function() {
   return this.getFullYear()+"-"+("0" + (this.getMonth() + 1)).slice(-2)+"-"+("0" + this.getDate()).slice(-2);
