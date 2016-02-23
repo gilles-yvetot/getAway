@@ -9,7 +9,6 @@
  */
 
 // var apiKey=0;
-var apiKey="AIzaSyAPCj0jDG3AlHWvHNVA6F_rtjX6WVfy8Ks";
 
 Date.prototype.toAPIdateString = function() {
   return this.getFullYear()+"-"+("0" + (this.getMonth() + 1)).slice(-2)+"-"+("0" + this.getDate()).slice(-2);
@@ -34,23 +33,36 @@ angular.module('flightFareApp')
           "passengers": {
             "adultCount": 1
           },
+          "solutions":50,
+          "maxPrice": ("USD "+250),
+          "saleCountry":"US",
           "slice": [
             {
               "origin": $scope.formData.fromDest,
               "destination": $scope.formData.toDest,
-              "date":  $scope.formData.fromDt.toAPIdateString()
+              "date":  $scope.formData.fromDt.toAPIdateString(),
+              "permittedDepartureTime": {
+                "earliestTime": "HH:MM",
+                "latestTime": "HH:MM"
+              },
+              "maxStops":0
             },
             {
               "origin": $scope.formData.toDest,
               "destination": $scope.formData.fromDest,
-              "date":  $scope.formData.toDt.toAPIdateString()
+              "date":  $scope.formData.toDt.toAPIdateString(),
+              "permittedDepartureTime": {
+                "earliestTime": "HH:MM",
+                "latestTime": "HH:MM"
+              },
+              "maxStops":0
             }
           ]
         }
       }
 
 
-    $http.post("https://www.googleapis.com/qpxExpress/v1/trips/search?key="+apiKey,params )
+    $http.post("https://www.googleapis.com/qpxExpress/v1/trips/search?key="+qpxKey,params )
     .then(
       function(res){
         alert(JSON.stringify(res))
