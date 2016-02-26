@@ -28,4 +28,18 @@
       </div>
     </div>
   </form>
+
+  <div id="results" ng-if="results && results.length">
+      <table class="table table-hover">
+        <tbody>
+          <tr ng-repeat="res in results">
+            <td>
+                {{res.departureTime}}@{{res.origin}}-->{{res.arrivalTime}}@{{res.destination}} ({{res.duration}} min)<br/>
+            </td>
+            <td>{{res.carrier}} {{res.flightNumber}}</td>
+            <td>{{res.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
 </div>

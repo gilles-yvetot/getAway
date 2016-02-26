@@ -69,7 +69,7 @@ angular.module('flightFareApp')
         /*
             {"data":{"kind":"qpxExpress#tripsSearch","trips":{"kind":"qpxexpress#tripOptions","requestId":"DkpFTCAMUuUlcSmCD0Np0B","data":{"kind":"qpxexpress#data"}}},"status":200,"config":{"method":"POST","transformRequest":[null],"transformResponse":[null],"url":"https://www.googleapis.com/qpxExpress/v1/trips/search?key=KEY HERE","data":{"request":{"passengers":{"adultCount":1},"slice":[{"origin":"MIA","destination":"BOS","date":"2016-02-19"},{"origin":"BOS","destination":"MIA","date":"2016-02-22"}]}},"headers":{"Accept":"application/json, text/plain, ","Content-Type":"application/json;charset=utf-8"}},"statusText":"OK"}"
         */
-
+        
       },
       function(res){
         alert(JSON.stringify(res))}
