@@ -1,34 +1,58 @@
 <div class="jumbotron">
   <form class="form-horizontal" ng-submit="searchFlight(formData)">
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label">From</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control"  ng-model="formData.fromDest">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label">To</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" placeholder="NYC" ng-model="formData.toDest">
-      </div>
-    </div>
-    
-    <div class="form-group">
-      <div style="display:inline-block; min-height:290px;">
-        <uib-datepicker ng-model="formData.fromDt" min-date="formData.minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
-      </div>
-      <div style="display:inline-block; min-height:290px;">
-        <uib-datepicker ng-model="formData.toDt" min-date="formData.fromDt" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
-      </div>
-    </div>
+    <div class="row">
+        <div class="col-md-6">
+          <!-- FROM -->
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">From</div>
+              <input type="text" class="form-control"  ng-model="formData.fromDest">
+            </div> 
+          </div>
+          <div class="form-group">
+              <uib-datepicker ng-model="formData.fromDt" min-date="formData.minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+              <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="formData.departureTimeEnable"/>
+                    Departure Time Preferences?
+                </label>
+              </div>
+              <div ng-if="!!formData.departureTimeEnable">
+                <uib-timepicker ng-model="formData.fromEarliestTime" show-meridian="false"></uib-timepicker>
+                <uib-timepicker ng-model="formData.fromLatestTime" show-meridian="false"></uib-timepicker>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- TO -->
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">To</div>
+              <input type="text" class="form-control" ng-model="formData.toDest">
+            </div> 
+          </div>
+          <div class="form-group">
+              <uib-datepicker ng-model="formData.toDt" min-date="formData.fromDt" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+              <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="formData.arrivalTimeEnable"/>
+                    Departure Time Preferences?
+                </label>
+              </div>
+              <div ng-if="!!formData.arrivalTimeEnable">
+                <uib-timepicker ng-model="formData.toEarliestTime" show-meridian="false"></uib-timepicker>
+                <uib-timepicker ng-model="formData.toLatestTime" show-meridian="false"></uib-timepicker>
+              </div>
+          </div>
+        </div>
+     </div>    
 
     <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Search</button>
-      </div>
+        <button type="submit" class="btn btn-info btn-lg btn-block btn-default">Search</button>
     </div>
+
   </form>
-  {{data.kind}}
+
   <div id="results" ng-if="trips && trips.length">
       <table class="table table-hover">
         <tbody>

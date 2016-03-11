@@ -51,6 +51,19 @@ angular.module('flightFareApp')
 
     return data.trips.tripOption
   }
+  function getCleanTime(dt)
+  {
+    if(dt)
+    {
+      var h = dt.getHours(),
+          m = dt.getMinutes()
+      if(h<10)
+        h="0"+h;
+      if(m<10)
+        m="0"+m;
+      return h+":"+m
+    }
+  }
 
 	$scope.searchFlight = function(){
 
@@ -88,6 +101,19 @@ angular.module('flightFareApp')
         }
       }
 
+      if (!!$scope.formData.departureTimeEnable){
+        params.request.slice[0].permittedDepartureTime.earliestTime 
+            = getCleanTime($scope.formData.fromEarliestTime)||"00:00"
+        params.request.slice[0].permittedDepartureTime.latestTime 
+            = getCleanTime($scope.formData.fromLatestTime)||"23:59"
+      }
+      if (!!$scope.formData.arrivalTimeEnable){
+        params.request.slice[1].permittedDepartureTime.earliestTime 
+            = getCleanTime($scope.formData.toEarliestTime)||"00:00"
+        params.request.slice[1].permittedDepartureTime.latestTime 
+            = getCleanTime($scope.formData.toLatestTime)||"23:59"
+      }
+
     // $http.post("https://www.googleapis.com/qpxExpress/v1/trips/search?key="+qpxKey,params )
     // .then(
     //   function(res){
@@ -98,9 +124,8 @@ angular.module('flightFareApp')
     // )
 	}
     var data = formatTripOption(mockup);
-    console.dir(data)
+    //console.dir(data)
     $scope.trips= data;
 
   });
-
 
