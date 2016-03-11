@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://developers.google.com/qpx-express/v1/trips/search#request-body -->
+<html lang="en" class="devsite"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Trips_ search  _  QPX Express API  _  Google Developers_files/linkid.js"></script><script async="" src="./Trips_ search  _  QPX Express API  _  Google Developers_files/analytics.js"></script><script>var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+</script><meta charset="utf-8"><meta name="xsrf_token" content="sBjMuidD-04HFpZA2JQ1e37DrkSz4rZpW0eqvvHP-4U6MTQ1NzcwMzI1MjA4NzMxMA"><link rel="canonical" href="https://developers.google.com/qpx-express/v1/trips/search"><link rel="alternate" href="https://developers.google.com/qpx-express/v1/trips/search" hreflang="en"><link rel="shortcut icon" href="https://developers.google.com/_static/ef4324f0ea/images/favicon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="publisher" href="https://plus.google.com/+GoogleDevelopers/"><link rel="stylesheet" href="./Trips_ search  _  QPX Express API  _  Google Developers_files/css"><link rel="stylesheet" href="./Trips_ search  _  QPX Express API  _  Google Developers_files/devsite-google-blue.css"><link rel="apple-touch-icon" href="https://developers.google.com/_static/ef4324f0ea/images/touch-icon.png"><link rel="search" type="application/opensearchdescription+xml" href="https://developers.google.com/s/opensearch.xml" data-tooltip-align="b,c" data-tooltip="Google Developers" aria-label="Google Developers" data-title="Google Developers"><script src="./Trips_ search  _  QPX Express API  _  Google Developers_files/jquery.min.js"></script><style></style><meta property="og:site_name" content="Google Developers"><meta property="og:type" content="website"><meta property="og:url" content="https://developers.google.com/qpx-express/v1/trips/search"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script><title>Trips: search &nbsp;|&nbsp;
+      QPX Express API &nbsp;|&nbsp;
+      Google Developers</title><meta property="og:title" content="Trips: search"></head><body class="devsite-doc-page
+               
+               devsite-header-no-upper-tabs
+               no-touch" id="top_of_page"><div class="devsite-wrapper" style="margin-top: 0px;"><header class="devsite-top-section nocontent
+               " style="position: fixed;"><div class="devsite-top-logo-row-wrapper-wrapper" style="position: relative;"><div class="devsite-top-logo-row-wrapper"><div class="devsite-top-logo-row devsite-full-site-width"><a class="devsite-logo gc-analytics-event" href="https://developers.google.com/" data-category="Site-Wide Custom Events" data-label="Site logo"><div class="devsite-logo-icon"></div><div class="devsite-logo-wordmark"></div></a><div class="devsite-search-wrapper devsite-history-enabled"><form class="devsite-search-form" action="https://developers.google.com/s/results/" method="GET" id="top-search"><div id="searchbox" class="devsite-searchbox"><span class="devsite-search-chip" data-tooltip-align="b,c" data-tooltip="Restrict search to QPX Express API" aria-label="Restrict search to QPX Express API">QPX Express API<span class="devsite-search-chip-close material-icons"></span></span><input placeholder="Search" type="text" class="devsite-search-field devsite-search-query" name="q" value="" autocomplete="off"><div class="devsite-search-image material-icons"></div></div><input type="hidden" name="p" id="search_project" value="/qpx-express/" data-project-name="QPX Express API" data-project-path="/qpx-express/" data-query-match=""><input type="hidden" id="suggest-category-label-2" value="Pages in QPX Express API"><input type="hidden" id="suggest-category-label-3" value="Reference in QPX Express API"><input type="hidden" id="suggest-category-label-1" value="Products"><input type="hidden" id="suggest-all-results-label" value="See all results for"><div class="devsite-popout devsite-popout-closed"><div class="devsite-suggest-container" style="display: none;"><div class="devsite-suggest-wrapper" style="display: none;"><div class="devsite-suggest-side-column"><div class="devsite-suggest-icon material-icons"></div></div><div class="devsite-suggest-main-column"><div class="devsite-suggest-column devsite-nav" id="devsite-recent-column"><div class="devsite-suggest-results"></div></div></div></div></div><div class="devsite-history-container"><div class="devsite-history-wrapper"><div class="devsite-history-side-column"><div class="devsite-history-icon material-icons"></div></div><div class="devsite-history-main-column">Turn on <a href="https://myaccount.google.com/privacy#accounthistory">history</a> to see the pages you visit often.<div class="devsite-history-footer"><a href="https://myaccount.google.com/privacy#accounthistory" class="devsite-history-preferences-link button button-white">History Preferences</a></div></div></div></div></div></form></div><div class="devsite-user-wrapper"><div class="devsite-user-links-wrapper"><div class="devsite-user-links-row"><a class="devsite-user-link gc-analytics-event" href="https://myaccount.google.com/" data-category="Site-Wide Custom Events" data-label="User email">g.yvetot@gmail.com</a></div><div class="devsite-user-links-row"><a class="devsite-user-change devsite-user-link gc-analytics-event" href="https://accounts.google.com/AccountChooser?continue=https%3A//developers.google.com/qpx-express/v1/trips/search" data-category="Site-Wide Custom Events" data-label="Change account">
+        
+        Change account
+      </a><span class="devsite-user-link devsite-user-pipe">|</span><a class="devsite-user-signout devsite-user-link gc-analytics-event" href="https://www.google.com/accounts/Logout?continue=https://developers.google.com/qpx-express/v1/trips/search&amp;service=ahsid" data-category="Site-Wide Custom Events" data-label="Sign out button">
+        
+        Sign out
+      </a></div></div><a href="https://myaccount.google.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="User avatar"><img src="./Trips_ search  _  QPX Express API  _  Google Developers_files/photo.jpg" class="devsite-avatar"></a></div><button type="button" class="devsite-search-button button-flat material-icons"></button></div></div></div><div class="devsite-collapsible-section" style="margin-top: -120px;"><div class="devsite-header-background devsite-full-site-width"><div class="devsite-site-nav-row devsite-full-site-width" style="visibility: hidden;"><nav class="devsite-site-nav devsite-nav"><ul class="devsite-site-nav-list"><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-parent
+                "><a href="https://developers.google.com/products/" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: parent" data-value="1">
+                Products
+              </a></li><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-project
+                "><div class="devsite-breadcrumb-guillemet material-icons"></div><a href="https://developers.google.com/qpx-express/" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: project" data-value="2">
+                QPX Express API
+              </a></li><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-tab
+                "><div class="devsite-breadcrumb-guillemet material-icons"></div><a href="https://developers.google.com/qpx-express/v1/" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: tab" data-value="3">
+                Reference
+              </a></li></ul></nav></div><div class="devsite-product-id-row devsite-full-site-width" style="visibility: hidden;"><div class="devsite-product-id-row-links-container"><a class="devsite-product-name gc-analytics-event" href="https://developers.google.com/qpx-express/" data-category="Site-Wide Custom Events" data-label="Project name (header)">
+      QPX Express API
+    </a></div></div><div class="devsite-doc-set-nav-row devsite-full-site-width"><nav class="devsite-doc-set-nav devsite-nav"><ul class="devsite-doc-set-nav-tab-list"><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/qpx-express/" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Home">
+        Home
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/qpx-express/v1/prereqs" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Guides">
+        Guides
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/qpx-express/v1/" class="devsite-doc-set-nav-active
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Reference">
+        Reference
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/qpx-express/faq" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Support">
+        Support
+      </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/qpx-express/v1/pricing" class="
+                devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Pricing">
+        Pricing
+      </a></li></ul></nav></div></div></div></header><script>
+  if (window.jQuery) {
+    $(document).ready(function() {
+      if (window.devsite && window.devsite.search) {
+        
+        window.devsite.search.init('en', false, null)
+      }
+    });
+  }
+</script><div id="gc-wrapper" itemscope="" itemtype="http://schema.org/Article"><input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {}, &quot;gaid&quot;: &quot;UA-49429427-1&quot;}"><input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;QPX Express API&quot;, &quot;dimension5&quot;: &quot;en&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed In&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-49880327-1&quot;}"><input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;QPX Express API&quot;, &quot;dimension5&quot;: &quot;en&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed In&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}">
+
+      
+        <div class="devsite-article-mask"></div>
+        <div class="devsite-site-mask"></div>
+        
+          
+  <nav class="devsite-section-nav-responsive devsite-nav nocontent" tabindex="0" style="left: -256px;">
+    <ul class="devsite-nav-list devsite-nav-expandable"><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Resource Summary</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Resources</span></span></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/parameters" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Standard Query Parameters</span></a></li><li class="devsite-nav-item devsite-nav-item-section-expandable"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0" tabindex="0"><span>Trips</span></span><a class="devsite-nav-toggle devsite-nav-toggle-expanded material-icons" track-type="leftNav" track-name="expandNavSectionArrow" track-metadata-position="0"></a><ul class="devsite-nav-section devsite-nav-section-expanded"><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item devsite-nav-active"><a href="https://developers.google.com/qpx-express/v1/trips/search" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>search</span></a></li></ul></li></ul>
+  </nav>
+
+        
+        <div class="devsite-main-content clearfix" style="margin-top: 264px;">
+
+        
+        
+
+        
+  
+  
+    
+    
+      
+  <nav class="devsite-section-nav devsite-nav nocontent" style="left: auto; max-height: 759px; position: fixed; top: 128px;">
+    <ul class="devsite-nav-list devsite-nav-expandable"><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Resource Summary</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Resources</span></span></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/parameters" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Standard Query Parameters</span></a></li><li class="devsite-nav-item devsite-nav-item-section-expandable"><span class="devsite-nav-title devsite-nav-title-no-path" track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0" tabindex="0"><span>Trips</span></span><a class="devsite-nav-toggle devsite-nav-toggle-expanded material-icons" track-type="leftNav" track-name="expandNavSectionArrow" track-metadata-position="0"></a><ul class="devsite-nav-section devsite-nav-section-expanded"><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item devsite-nav-active"><a href="https://developers.google.com/qpx-express/v1/trips/search" class="devsite-nav-title gc-analytics-event" track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>search</span></a></li></ul></li></ul>
+  </nav>
+
+    
+
+    
+  <nav class="devsite-page-nav devsite-nav" style="position: fixed; left: 1467.5px; max-height: 759px; top: 128px;"><ul class="devsite-page-nav-list"><li class="devsite-nav-item devsite-nav-item-heading"><a href="https://developers.google.com/qpx-express/v1/trips/search#top_of_page" class="devsite-nav-title"><span>Contents</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#request" class="devsite-nav-title"><span>Request</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#http-request" class="devsite-nav-title"><span>HTTP request</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#request-body" class="devsite-nav-title devsite-nav-active"><span>Request body</span></a></li></ul></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#response" class="devsite-nav-title"><span>Response</span></a></li></ul></nav>
+
+
+      <article class="devsite-article">
+        <div class="devsite-article-inner">
+  
+          
+  
+
+
+<div class="devsite-rating-container "><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" data-category="Site-Wide Custom Events" data-label="Star Rating 1"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" data-category="Site-Wide Custom Events" data-label="Star Rating 2"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" data-category="Site-Wide Custom Events" data-label="Star Rating 3"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" data-category="Site-Wide Custom Events" data-label="Star Rating 4"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" data-category="Site-Wide Custom Events" data-label="Star Rating 5"></div></div><div class="devsite-rating-description"></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div><script>
+$(document).ready(function() {
+  devsite.ratings.init(
+    document.querySelectorAll('#devsite-feedback-project'),
+        false
+        
+  );
+});
+</script>
+
+
+  
+  
+  <div class="devsite-expand-section-nav-container">
+  
+    <button type="button" class="devsite-expand-section-nav button-flat material-icons"></button>
+  
+  
+    <h1 itemprop="name" class="devsite-page-title">
+      Trips: search
+    </h1>
+  
+  </div>
+  
+    <nav class="devsite-page-nav-embedded devsite-nav"><ul class="devsite-page-nav-list"><li class="devsite-nav-item devsite-nav-item-heading"><a href="https://developers.google.com/qpx-express/v1/trips/search#top_of_page" class="devsite-nav-title"><span>Contents</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#request" class="devsite-nav-title"><span>Request</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#http-request" class="devsite-nav-title"><span>HTTP request</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#request-body" class="devsite-nav-title"><span>Request body</span></a></li></ul></li><li class="devsite-nav-item"><a href="https://developers.google.com/qpx-express/v1/trips/search#response" class="devsite-nav-title"><span>Response</span></a></li></ul></nav>
+  
+  <div class="devsite-article-body clearfix" itemprop="articleBody">
+    
+
+
+
+
+
+
+
+<p>Returns a list of flights.
+</p>
+
+
+
+<section id="request">
+  <h2 id="request">Request</h2>
+  <h3 id="http-request">HTTP request</h3>
+<pre>POST https://www.googleapis.com/qpxExpress/v1/trips/search</pre>
+
+
+
+  <h3 id="request-body">Request body</h3>
+
+  <p>In the request body, supply data with the following structure:</p>
+  <section>
+    <pre class="prettyprint"><div class="gc-analytics-event material-icons devsite-click-to-copy-button" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy" data-tooltip-align="b,c" data-tooltip="Click to copy" aria-label="Click to copy" data-title="Click to copy"></div><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="str">"request"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"passengers"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#passengerCounts"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"adultCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"childCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"infantInLapCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"infantInSeatCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"seniorCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"slice"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#sliceInput"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"origin"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"destination"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"maxStops"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"maxConnectionDuration"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"preferredCabin"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"permittedDepartureTime"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#timeOfDayRange"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"earliestTime"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"latestTime"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"permittedCarrier"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"alliance"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"prohibitedCarrier"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"maxPrice"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"saleCountry"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"refundable"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">boolean</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"solutions"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">}</span></pre>
+    <div class="devsite-table-wrapper"><table class="matchpre">
+      <thead>
+        <tr>
+          <th>Property name</th>
+          <th>Value</th>
+          <th>Description</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr id="request">
+        <td><code><span>request</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>A QPX Express search request. Required values are at least one adult or senior passenger, an origin, a destination, and a date.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers">
+        <td><code><span class="quiet"><span>request.<wbr></span></span><span>passengers</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>Counts for each passenger type in the request.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers.kind">
+        <td><code><span class="quiet"><span>request.<wbr>passengers.<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a passenger count object, representing the number of passengers. Value: the fixed string <code><span>qpxexpress#passengerCounts</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers.adultCount">
+        <td><code><span class="quiet"><span>request.<wbr>passengers.<wbr></span></span><span>adultCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are adults.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers.childCount">
+        <td><code><span class="quiet"><span>request.<wbr>passengers.<wbr></span></span><span>childCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are children.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers.infantInLapCount">
+        <td><code><span class="quiet"><span>request.<wbr>passengers.<wbr></span></span><span>infantInLapCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are infants travelling in the lap of an adult.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers.infantInSeatCount">
+        <td><code><span class="quiet"><span>request.<wbr>passengers.<wbr></span></span><span>infantInSeatCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are infants each assigned a seat.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.passengers.seniorCount">
+        <td><code><span class="quiet"><span>request.<wbr>passengers.<wbr></span></span><span>seniorCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are senior citizens.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice">
+        <td><code><span class="quiet"><span>request.<wbr></span></span><span>slice[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The slices that make up the itinerary of this trip. A slice represents a traveler's intent, the portion of a low-fare search corresponding to a traveler's request to get between two points. One-way journeys are generally expressed using one slice, round-trips using two. An example of a three slice trip would be: <code><span>BOS-LAX 10MAR2007</span></code>, <code><span>LAX-SYD 17MAR2007</span></code>, <code><span>SYD-BOS 22MAR2007</span></code>. However, if this traveler were just stopping in <code><span>LAX</span></code> and <code><span>SYD</span></code> to change planes, this would likely be a three segment, one slice trip.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.kind">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a slice input object, representing the criteria a desired slice must satisfy. Value: the fixed string <code><span>qpxexpress#sliceInput</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.origin">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>origin</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Airport or city IATA designator of the origin.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.destination">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>destination</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Airport or city IATA designator of the destination.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.date">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>date</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Departure date in <code><span>YYYY-MM-DD</span></code> format.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.maxStops">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>maxStops</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The maximum number of stops the passenger(s) are willing to accept in this slice.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.maxConnectionDuration">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>maxConnectionDuration</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The longest connection between two legs, in minutes, the passenger(s) are willing to accept.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.preferredCabin">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>preferredCabin</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Prefer solutions that book in this cabin for this slice. Allowed values are <code><span>COACH</span></code>, <code><span>PREMIUM_COACH</span></code>, <code><span>BUSINESS</span></code>, and <code><span>FIRST</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.permittedDepartureTime">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>permittedDepartureTime</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>Slices must depart in this time of day range, local to the point of departure.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.permittedDepartureTime.kind">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr>permittedDepartureTime.<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a time of day range object, representing two times in a single day defining a time range. Value: the fixed string <code><span>qpxexpress#timeOfDayRange</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.permittedDepartureTime.earliestTime">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr>permittedDepartureTime.<wbr></span></span><span>earliestTime</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The earliest time of day in HH:MM format.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.permittedDepartureTime.latestTime">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr>permittedDepartureTime.<wbr></span></span><span>latestTime</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The latest time of day in HH:MM format.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.permittedCarrier">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>permittedCarrier[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>A list of 2-letter IATA airline designators. Slices with only these carriers should be returned.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.alliance">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>alliance</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Slices with only the carriers in this alliance should be returned; do not use this field with <code><span>permittedCarrier</span></code>. Allowed values are ONEWORLD, SKYTEAM, and STAR.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.slice.prohibitedCarrier">
+        <td><code><span class="quiet"><span>request.<wbr>slice[].<wbr></span></span><span>prohibitedCarrier[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>A list of 2-letter IATA airline designators. Exclude slices that use these carriers.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.maxPrice">
+        <td><code><span class="quiet"><span>request.<wbr></span></span><span>maxPrice</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Do not return solutions that cost more than this price. The currency is specified in ISO-4217. The format, in regex, is [A-Z]{3}\d+(\.\d+)?</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.saleCountry">
+        <td><code><span class="quiet"><span>request.<wbr></span></span><span>saleCountry</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>IATA country code representing the point of sale. This determines the "equivalent amount paid" currency for the ticket.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.refundable">
+        <td><code><span class="quiet"><span>request.<wbr></span></span><span>refundable</span></code></td>
+        <td><code class="apitype"><span>boolean</span></code></td>
+        <td>Return only solutions with refundable fares.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="request.solutions">
+        <td><code><span class="quiet"><span>request.<wbr></span></span><span>solutions</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of solutions to return, maximum 500.</td>
+        <td>
+        </td>
+      </tr>
+      </tbody>
+    </table></div>
+  </section>
+</section>
+
+<section id="response">
+  <h2 id="response">Response</h2>
+
+  <p>If successful, this method returns a response body with the following structure:</p>
+  <section>
+    <pre class="prettyprint"><div class="gc-analytics-event material-icons devsite-click-to-copy-button" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy" data-tooltip-align="b,c" data-tooltip="Click to copy" aria-label="Click to copy" data-title="Click to copy"></div><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxExpress#tripsSearch"</span><span class="pun">,</span><span class="pln"><br>&nbsp; </span><span class="str">"trips"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#tripOptions"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"requestId"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"data"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#data"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"airport"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#airportData"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"city"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"city"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#cityData"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"country"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"aircraft"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#aircraftData"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"tax"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#taxData"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"carrier"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#carrierData"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"tripOption"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#tripOption"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"saleTotal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"slice"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#sliceInfo"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"duration"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"segment"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#segmentInfo"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"duration"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"flight"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"carrier"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"number"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"cabin"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"bookingCode"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"bookingCodeCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"marriedSegmentGroup"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"subjectToGovernmentApproval"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">boolean</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"leg"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#legInfo"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"aircraft"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"arrivalTime"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"departureTime"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"origin"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"destination"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"originTerminal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"destinationTerminal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"duration"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"operatingDisclosure"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"onTimePerformance"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"mileage"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"meal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"secure"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">boolean</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"connectionDuration"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"changePlane"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">boolean</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"connectionDuration"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"pricing"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#pricingInfo"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"fare"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#fareInfo"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"carrier"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"origin"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"destination"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"basisCode"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"private"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">boolean</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"segmentPricing"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#segmentPricing"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"fareId"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"segmentId"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"freeBaggageOption"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#freeBaggageAllowance"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"bagDescriptor"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#bagDescriptor"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"commercialName"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"count"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"subcode"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kilos"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kilosPerPiece"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"pieces"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"pounds"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"baseFareTotal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"saleFareTotal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"saleTaxTotal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"saleTotal"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"passengers"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#passengerCounts"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"adultCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"childCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"infantInLapCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"infantInSeatCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"seniorCount"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="pln">integer</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"tax"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qpxexpress#taxInfo"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"chargeType"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"country"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"salePrice"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"fareCalculation"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"latestTicketingTime"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"ptc"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">string</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="str">"refundable"</span><span class="pun">:</span><span class="pln"> </span><var class="apiparam"><span class="kwd">boolean</span></var><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">]</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="pun">}</span></pre>
+    <div class="devsite-table-wrapper"><table class="matchpre">
+      <thead>
+        <tr>
+          <th>Property name</th>
+          <th>Value</th>
+          <th>Description</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr id="kind">
+        <td><code><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a QPX Express API search response resource. Value: the fixed string <code><span>qpxExpress#tripsSearch</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips">
+        <td><code><span>trips</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>All possible solutions to the QPX Express search request.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.kind">
+        <td><code><span class="quiet"><span>trips.<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a QPX Express trip response object, which consists of zero or more solutions. Value: the fixed string <code><span>qpxexpress#tripOptions</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.requestId">
+        <td><code><span class="quiet"><span>trips.<wbr></span></span><span>requestId</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>An identifier uniquely identifying this response.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data">
+        <td><code><span class="quiet"><span>trips.<wbr></span></span><span>data</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>Informational data global to list of solutions.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as QPX Express response resource, including a trip's airport, city, taxes, airline, and aircraft. Value: the fixed string <code><span>qpxexpress#data</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.airport">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr></span></span><span>airport[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The airport of an origin or destination.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.airport.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>airport[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as an airport object. Value: the fixed string <code><span>qpxexpress#airportData</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.airport.code">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>airport[].<wbr></span></span><span>code</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>An airport's code. For example, for Boston Logan airport, this is BOS.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.airport.city">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>airport[].<wbr></span></span><span>city</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The city code an airport is located in. For example, for JFK airport, this is NYC.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.airport.name">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>airport[].<wbr></span></span><span>name</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The name of an airport. For example, for airport BOS the name is "Boston Logan International".</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.city">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr></span></span><span>city[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The city that is either the origin or destination of part of a trip.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.city.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>city[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a city, typically with one or more airports. Value: the fixed string <code><span>qpxexpress#cityData</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.city.code">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>city[].<wbr></span></span><span>code</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The IATA character ID of a city. For example, for Boston this is BOS.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.city.country">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>city[].<wbr></span></span><span>country</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The two-character country code of the country the city is located in. For example, <code><span>US</span></code> for the United States of America.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.city.name">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>city[].<wbr></span></span><span>name</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The full name of a city. An example would be: <code><span>New York</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.aircraft">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr></span></span><span>aircraft[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The aircraft that is flying between an origin and destination.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.aircraft.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>aircraft[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as an <code><span>aircraftData</span></code> object. Value: the fixed string <code><span>qpxexpress#aircraftData</span></code></td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.aircraft.code">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>aircraft[].<wbr></span></span><span>code</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The aircraft code. For example, for a Boeing 777 the code would be <code><span>777</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.aircraft.name">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>aircraft[].<wbr></span></span><span>name</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The name of an aircraft, for example <code><span>Boeing 777</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.tax">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr></span></span><span>tax[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The taxes due for flying between an origin and a destination.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.tax.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>tax[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a tax data object, representing some tax. Value: the fixed string <code><span>qpxexpress#taxData</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.tax.id">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>tax[].<wbr></span></span><span>id</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>An identifier uniquely identifying a tax in a response.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.tax.name">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>tax[].<wbr></span></span><span>name</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The name of a tax.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.carrier">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr></span></span><span>carrier[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The airline carrier of the aircraft flying between an origin and destination. Allowed values are IATA carrier codes.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.carrier.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>carrier[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a kind of carrier (for example, an airline, bus line, railroad, etc). Value: the fixed string <code><span>qpxexpress#carrierData</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.carrier.code">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>carrier[].<wbr></span></span><span>code</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The IATA designator of a carrier (airline, etc). For example, for American Airlines, the code is <code><span>AA</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.data.carrier.name">
+        <td><code><span class="quiet"><span>trips.<wbr>data.<wbr>carrier[].<wbr></span></span><span>name</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The long, full name of a carrier. For example: <code><span>American Airlines</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption">
+        <td><code><span class="quiet"><span>trips.<wbr></span></span><span>tripOption[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>A list of priced itinerary solutions to the QPX Express query.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a trip information object. Value: the fixed string <code><span>qpxexpress#tripOption</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.saleTotal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr></span></span><span>saleTotal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The total price for all passengers on the trip, in the form of a currency followed by an amount, e.g. USD253.35.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.id">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr></span></span><span>id</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifier uniquely identifying this trip in a response.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr></span></span><span>slice[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The slices that make up this trip's itinerary.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a slice object. A slice represents a traveller's intent, the portion of a low-fare search corresponding to a traveler's request to get between two points. One-way journeys are generally expressed using 1 slice, round-trips using 2. Value: the fixed string <code><span>qpxexpress#sliceInfo</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.duration">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr></span></span><span>duration</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The duration of the slice in minutes.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr></span></span><span>segment[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The segment(s) constituting the slice.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a segment object. A segment is one or more consecutive legs on the same flight. For example a hypothetical flight ZZ001, from DFW to OGG, could have one segment with two legs: DFW to HNL (leg 1), HNL to OGG (leg 2). Value: the fixed string <code><span>qpxexpress#segmentInfo</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.duration">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>duration</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The duration of the flight segment in minutes.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.flight">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>flight</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>The flight this is a segment of.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.flight.carrier">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>flight.<wbr></span></span><span>carrier</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The 2-letter IATA airline designator for the segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.flight.number">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>flight.<wbr></span></span><span>number</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The flight number.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.id">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>id</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>An ID uniquely identifying the segment in the solution.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.cabin">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>cabin</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The cabin booked for this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.bookingCode">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>bookingCode</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The booking code or class for this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.bookingCodeCount">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>bookingCodeCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of seats available in this booking code on this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.marriedSegmentGroup">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>marriedSegmentGroup</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The solution-based index of a segment in a married segment group. Married segments can only be booked together. For example, an airline might report a certain booking code as sold out from Boston to Pittsburgh, but as available as part of two married segments Boston to Chicago connecting through Pittsburgh. For example content of this field, consider the round-trip flight ZZ1 PHX-PHL ZZ2 PHL-CLT ZZ3 CLT-PHX. This has three segments, with the two outbound ones (ZZ1 ZZ2) married. In this case, the two outbound segments belong to married segment group 0, and the return segment belongs to married segment group 1.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.subjectToGovernmentApproval">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>subjectToGovernmentApproval</span></code></td>
+        <td><code class="apitype"><span>boolean</span></code></td>
+        <td>Whether the operation of this segment remains subject to government approval.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>leg[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The legs composing this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a leg object. A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number. Value: the fixed string <code><span>qpxexpress#legInfo</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.id">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>id</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>An identifier that uniquely identifies this leg in the solution.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.aircraft">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>aircraft</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The aircraft (or bus, ferry, railcar, etc) travelling between the two points of this leg.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.arrivalTime">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>arrivalTime</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The scheduled time of arrival at the destination of the leg, local to the point of arrival.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.departureTime">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>departureTime</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The scheduled departure time of the leg, local to the point of departure.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.origin">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>origin</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The leg origin as a city and airport.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.destination">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>destination</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The leg destination as a city and airport.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.originTerminal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>originTerminal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The terminal the flight is scheduled to depart from.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.destinationTerminal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>destinationTerminal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The terminal the flight is scheduled to arrive at.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.duration">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>duration</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The scheduled travelling time from the origin to the destination.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.operatingDisclosure">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>operatingDisclosure</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Department of Transportation disclosure information on the actual operator of a flight in a code share. (A code share refers to a marketing agreement between two carriers, where one carrier will list in its schedules (and take bookings for) flights that are actually operated by another carrier.)</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.onTimePerformance">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>onTimePerformance</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>In percent, the published on time performance on this leg.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.mileage">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>mileage</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of miles in this leg.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.meal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>meal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>A simple, general description of the meal(s) served on the flight, for example: <code><span>"Hot meal"</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.secure">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>secure</span></code></td>
+        <td><code class="apitype"><span>boolean</span></code></td>
+        <td>Whether passenger information must be furnished to the United States Transportation Security Administration (TSA) prior to departure.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.connectionDuration">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>connectionDuration</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>Duration of a connection following this leg, in minutes.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.leg.changePlane">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr>leg[].<wbr></span></span><span>changePlane</span></code></td>
+        <td><code class="apitype"><span>boolean</span></code></td>
+        <td>Whether the passenger(s) have to change planes following this leg. Only applies to the next leg.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.slice.segment.connectionDuration">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>slice[].<wbr>segment[].<wbr></span></span><span>connectionDuration</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>In minutes, the duration of the connection following this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr></span></span><span>pricing[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>Per passenger pricing information.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a pricing object, representing the price of one or more travel segments. Value: the fixed string <code><span>qpxexpress#pricingInfo</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>fare[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The fare used to price one or more segments.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a fare object. Value: the fixed string <code><span>qpxexpress#fareInfo</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.id">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>id</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>A unique identifier of the fare.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.carrier">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>carrier</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The 2-letter IATA airline designator of the carrier whose fare this is.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.origin">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>origin</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The origin city to which this fare applies</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.destination">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>destination</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The destination city to which this fare applies</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.basisCode">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>basisCode</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The Fare Basis Code.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fare.private">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>fare[].<wbr></span></span><span>private</span></code></td>
+        <td><code class="apitype"><span>boolean</span></code></td>
+        <td>Whether this is a private fare, for example one offered only to select customers rather than the general public.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>segmentPricing[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The per-segment price and baggage information.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a segment pricing object, representing the price of this segment. Value: the fixed string <code><span>qpxexpress#segmentPricing</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.fareId">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr></span></span><span>fareId</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>A segment identifier unique within a single solution. It is used to refer to different parts of the same solution.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.segmentId">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr></span></span><span>segmentId</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Unique identifier in the response of this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr></span></span><span>freeBaggageOption[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>Details of the free baggage allowance on this segment.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as free baggage object, allowed on one segment of a trip. Value: the fixed string <code><span>qpxexpress#freeBaggageAllowance</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.bagDescriptor">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr></span></span><span>bagDescriptor[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>A representation of a type of bag, such as an ATPCo subcode, Commercial Name, or other description.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.bagDescriptor.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr>bagDescriptor[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a baggage object. Value: the fixed string <code><span>qpxexpress#bagDescriptor</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.bagDescriptor.commercialName">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr>bagDescriptor[].<wbr></span></span><span>commercialName</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Provides the commercial name for an optional service.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.bagDescriptor.count">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr>bagDescriptor[].<wbr></span></span><span>count</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>How many of this type of bag will be checked on this flight.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.bagDescriptor.description">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr>bagDescriptor[].<wbr></span></span><span>description[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>A description of the baggage.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.bagDescriptor.subcode">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr>bagDescriptor[].<wbr></span></span><span>subcode</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The standard IATA subcode used to identify this optional service.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.kilos">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr></span></span><span>kilos</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The maximum number of kilos all the free baggage together may weigh.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.kilosPerPiece">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr></span></span><span>kilosPerPiece</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The maximum number of kilos any one piece of baggage may weigh.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.pieces">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr></span></span><span>pieces</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of free pieces of baggage allowed.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.segmentPricing.freeBaggageOption.pounds">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>segmentPricing[].<wbr>freeBaggageOption[].<wbr></span></span><span>pounds</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of pounds of free baggage allowed.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.baseFareTotal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>baseFareTotal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The total fare in the base fare currency (the currency of the country of origin). This element is only present when the sales currency and the currency of the country of commencement are different.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.saleFareTotal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>saleFareTotal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The total fare in the sale or equivalent currency.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.saleTaxTotal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>saleTaxTotal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The taxes in the sale or equivalent currency.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.saleTotal">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>saleTotal</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Total per-passenger price (fare and tax) in the sale or equivalent currency.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>passengers</span></code></td>
+        <td><code class="apitype"><span>nested object</span></code></td>
+        <td>The number of passengers to which this price applies.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>passengers.<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a passenger count object, representing the number of passengers. Value: the fixed string <code><span>qpxexpress#passengerCounts</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers.adultCount">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>passengers.<wbr></span></span><span>adultCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are adults.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers.childCount">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>passengers.<wbr></span></span><span>childCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are children.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers.infantInLapCount">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>passengers.<wbr></span></span><span>infantInLapCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are infants travelling in the lap of an adult.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers.infantInSeatCount">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>passengers.<wbr></span></span><span>infantInSeatCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are infants each assigned a seat.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.passengers.seniorCount">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>passengers.<wbr></span></span><span>seniorCount</span></code></td>
+        <td><code class="apitype"><span>integer</span></code></td>
+        <td>The number of passengers that are senior citizens.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>tax[]</span></code></td>
+        <td><code class="apitype"><span>list</span></code></td>
+        <td>The taxes used to calculate the tax total per ticket.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax.kind">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>tax[].<wbr></span></span><span>kind</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifies this as a tax information object. Value: the fixed string <code><span>qpxexpress#taxInfo</span></code>.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax.id">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>tax[].<wbr></span></span><span>id</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Identifier uniquely identifying this tax in a response. Not present for unnamed carrier surcharges.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax.chargeType">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>tax[].<wbr></span></span><span>chargeType</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>Whether this is a government charge or a carrier surcharge.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax.code">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>tax[].<wbr></span></span><span>code</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The code to enter in the ticket's tax box.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax.country">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>tax[].<wbr></span></span><span>country</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>For government charges, the country levying the charge.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.tax.salePrice">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr>tax[].<wbr></span></span><span>salePrice</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The price of the tax in the sales or equivalent currency.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.fareCalculation">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>fareCalculation</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The horizontal fare calculation. This is a field on a ticket that displays all of the relevant items that go into the calculation of the fare.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.latestTicketingTime">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>latestTicketingTime</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The latest ticketing time for this pricing assuming the reservation occurs at ticketing time and there is no change in fares/rules. The time is local to the point of sale (POS).</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.ptc">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>ptc</span></code></td>
+        <td><code class="apitype"><span>string</span></code></td>
+        <td>The passenger type code for this pricing. An alphanumeric code used by a carrier to restrict fares to certain categories of passenger. For instance, a fare might be valid only for senior citizens.</td>
+        <td>
+        </td>
+      </tr>
+      <tr id="trips.tripOption.pricing.refundable">
+        <td><code><span class="quiet"><span>trips.<wbr>tripOption[].<wbr>pricing[].<wbr></span></span><span>refundable</span></code></td>
+        <td><code class="apitype"><span>boolean</span></code></td>
+        <td>Whether the fares on this pricing are refundable.</td>
+        <td>
+        </td>
+      </tr>
+      </tbody>
+    </table></div>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+  
+  </div>
+
+  
+        
+<div class="devsite-content-footer nocontent">
+  
+  
+  
+    <p>Except as otherwise noted, the content of this page is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, and code samples are licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see our <a href="https://developers.google.com/site-policies">Site Policies</a>.</p>
+  
+
+  
+    
+    <p class="devsite-content-footer-date" itemprop="datePublished" content="2014-02-11T18:13:51.181490">
+      
+      Last updated February 11, 2014.
+    </p>
+  
+
+</div>
+
+        </div>
+      </article>
+  
+
+        </div>
+      
+
+<footer class="devsite-footer nocontent"><nav class="devsite-full-site-width"><ul class="devsite-footer-row"><li class="devsite-footer-linkbox devsite-footer-flex"><span class="devsite-footer-linkbox-icon material-icons">airplanemode_on</span><h3 class="devsite-footer-linkbox-heading hide-from-toc">Demo</h3><ul><li class="devsite-footer-linkbox-item"><a href="https://qpx-express-demo.itasoftware.com/" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  QPX Express Test Drive 
+                
+              </a></li></ul></li><li class="devsite-footer-linkbox devsite-footer-flex"><span class="devsite-footer-linkbox-icon material-icons">info</span><h3 class="devsite-footer-linkbox-heading hide-from-toc">Product Info</h3><ul><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/qpx-express/terms" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Terms of Service 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/qpx-express/v1/pricing" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Pricing and Usage Limits 
+                
+              </a></li></ul></li></ul></nav></footer><footer class="devsite-site-footer nocontent"><nav class="devsite-site-footer-nav devsite-nav devsite-full-site-width"><ul class="devsite-site-footer-column-list"><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Connect</h3></li><li class="devsite-site-footer-item"><a href="https://googledevelopers.blogspot.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Blog Link">Blog</a></li><li class="devsite-site-footer-item"><a href="https://www.facebook.com/pages/Google-Developers/967415219957038" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Facebook Link">Facebook</a></li><li class="devsite-site-footer-item"><a href="https://plus.google.com/+GoogleDevelopers/posts" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer G+ Link">Google+</a></li><li class="devsite-site-footer-item"><a href="https://medium.com/google-developers" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Medium Link">Medium</a></li><li class="devsite-site-footer-item"><a href="https://twitter.com/googledevs" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Twitter Link">Twitter</a></li><li class="devsite-site-footer-item"><a href="https://www.youtube.com/user/GoogleDevelopers" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer YouTube Link">YouTube</a></li></ul></li><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Programs</h3></li><li class="devsite-site-footer-item"><a href="https://www.womentechmakers.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Women Techmakers">Women Techmakers</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/agency/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Agency">Agency Program</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/groups/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Groups">Google Developer Groups</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/experts/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Experts">Google Developer Experts</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/startups/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Startups">Startup Launchpad</a></li></ul></li><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Developer Consoles</h3></li><li class="devsite-site-footer-item"><a href="https://console.developers.google.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Console">Google Developers Console</a></li><li class="devsite-site-footer-item"><a href="https://play.google.com/apps/publish/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Play Developers Console">Google Play Console</a></li><li class="devsite-site-footer-item"><a href="https://cast.google.com/publish/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Cast SDK Developer Console">Cast SDK Console</a></li><li class="devsite-site-footer-item"><a href="https://chrome.google.com/webstore/developer/dashboard" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Web Store Developer Dashboard">Chrome Web Store Dashboard</a></li></ul></li><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Explore</h3></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/android/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android">Android</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/ios/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer iOS">iOS</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/web/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Web">Web</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/games/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Games">Games</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/products/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Products">All Products</a></li><li class="devsite-site-footer-item"><a href="https://www.google.com/about/careers/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer more careers">Careers</a></li></ul></li></ul></nav></footer><footer class="devsite-utility-footer"><nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width"><span class="devsite-utility-footer-links"><a href="https://developers.google.com/site-terms/">Terms</a>
+      &nbsp; | &nbsp;
+      
+      <a href="https://www.google.com/intl/en/privacy/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Privacy Link">Privacy</a></span><form class="devsite-utility-footer-language" id="setlang" action="https://developers.google.com/i18n/setlang/" method="post"><input type="hidden" name="xsrf_token" value="sBjMuidD-04HFpZA2JQ1e37DrkSz4rZpW0eqvvHP-4U6MTQ1NzcwMzI1MjA4NzMxMA"><input type="hidden" name="next" value="/qpx-express/v1/trips/search"><select id="footer_language" name="language" style="display: none;"><option value="ar">
+            العربيّة
+          </option><option value="bg">
+            български
+          </option><option value="ca">
+            català
+          </option><option value="zh-cn">
+            简体中文
+          </option><option value="zh-tw">
+            繁體中文
+          </option><option value="hr">
+            Hrvatski
+          </option><option value="cs">
+            česky
+          </option><option value="da">
+            dansk
+          </option><option value="nl">
+            Nederlands
+          </option><option value="en" selected="selected">
+            English
+          </option><option value="fa">
+            فارسی
+          </option><option value="fi">
+            suomi
+          </option><option value="fr">
+            français
+          </option><option value="de">
+            Deutsch
+          </option><option value="el">
+            Ελληνικά
+          </option><option value="he">
+            עברית
+          </option><option value="hi">
+            Hindi
+          </option><option value="hu">
+            Magyar
+          </option><option value="id">
+            Bahasa Indonesia
+          </option><option value="it">
+            italiano
+          </option><option value="ja">
+            日本語
+          </option><option value="ko">
+            한국어
+          </option><option value="lv">
+            latviešu
+          </option><option value="lt">
+            Lietuviškai
+          </option><option value="nb">
+            norsk (bokmål)
+          </option><option value="nn">
+            norsk (nynorsk)
+          </option><option value="pl">
+            polski
+          </option><option value="pt-br">
+            Português Brasileiro
+          </option><option value="pt">
+            Português
+          </option><option value="ro">
+            Română
+          </option><option value="ru">
+            Русский
+          </option><option value="sr">
+            српски
+          </option><option value="sk">
+            slovenský
+          </option><option value="sl">
+            Slovenščina
+          </option><option value="es">
+            español
+          </option><option value="es-419">
+            Español (América Latina)
+          </option><option value="sv">
+            svenska
+          </option><option value="th">
+            ภาษาไทย
+          </option><option value="tr">
+            Türkçe
+          </option><option value="uk">
+            Українська
+          </option><option value="vi">
+            Tiếng Việt
+          </option></select><span class="kd-button kd-menubutton kd-select"><div style="display: inline-block;"><div class="label" style="float: left;">
+            English
+          </div><div class="kd-disclosureindicator"></div></div></span></form></nav></footer></div><script async="" defer="" src="./Trips_ search  _  QPX Express API  _  Google Developers_files/api.js"></script><script src="./Trips_ search  _  QPX Express API  _  Google Developers_files/jquery_ui-bundle.js"></script><script src="./Trips_ search  _  QPX Express API  _  Google Developers_files/saved_resource"></script><script src="./Trips_ search  _  QPX Express API  _  Google Developers_files/script_foot_closure.js"></script><script src="./Trips_ search  _  QPX Express API  _  Google Developers_files/script_foot.js"></script><script>
+        (function($) {
+          devsite.devsite.Init($, 'devsite',
+              '["user-history-launch"]', '',
+              'en', true,
+              'ef4324f0ea', 'g.yvetot@gmail.com',
+              true, // Enable Copenhagen
+              {"098dafe57affddc137df300142652cfd": false, "aeabbb621a03102b5b95dbd63cd26e68": false, "6749dcb526ce9bde6993550c7d928d24": true, "ce556e0d44070ac33ad04f8fda535631": false, "00fe5bd02d47cd27e60084834f8b87c5": false}, '/qpx-express/',
+              'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+      </script><script>
+      $('#setlang select').each(function() {
+        if (navigator.userAgent.match(/msie/i)) {
+          $(this).change(function() {
+            $('#setlang').submit();
+          });
+        } else {
+          $(this).kdSelect({'change': function() {
+            $('#setlang').submit();
+          }});
+        }
+      });
+      </script></div><ul class="kd-menulist" style="display: none; position: absolute; top: 14052px; right: auto; bottom: auto; left: 1531.5px; height: 512px; padding: 0px;"><li class="kd-menulistitem">
+            العربيّة
+          </li><li class="kd-menulistitem">
+            български
+          </li><li class="kd-menulistitem">
+            català
+          </li><li class="kd-menulistitem">
+            简体中文
+          </li><li class="kd-menulistitem">
+            繁體中文
+          </li><li class="kd-menulistitem">
+            Hrvatski
+          </li><li class="kd-menulistitem">
+            česky
+          </li><li class="kd-menulistitem">
+            dansk
+          </li><li class="kd-menulistitem">
+            Nederlands
+          </li><li class="kd-menulistitem selected">
+            English
+          </li><li class="kd-menulistitem">
+            فارسی
+          </li><li class="kd-menulistitem">
+            suomi
+          </li><li class="kd-menulistitem">
+            français
+          </li><li class="kd-menulistitem">
+            Deutsch
+          </li><li class="kd-menulistitem">
+            Ελληνικά
+          </li><li class="kd-menulistitem">
+            עברית
+          </li><li class="kd-menulistitem">
+            Hindi
+          </li><li class="kd-menulistitem">
+            Magyar
+          </li><li class="kd-menulistitem">
+            Bahasa Indonesia
+          </li><li class="kd-menulistitem">
+            italiano
+          </li><li class="kd-menulistitem">
+            日本語
+          </li><li class="kd-menulistitem">
+            한국어
+          </li><li class="kd-menulistitem">
+            latviešu
+          </li><li class="kd-menulistitem">
+            Lietuviškai
+          </li><li class="kd-menulistitem">
+            norsk (bokmål)
+          </li><li class="kd-menulistitem">
+            norsk (nynorsk)
+          </li><li class="kd-menulistitem">
+            polski
+          </li><li class="kd-menulistitem">
+            Português Brasileiro
+          </li><li class="kd-menulistitem">
+            Português
+          </li><li class="kd-menulistitem">
+            Română
+          </li><li class="kd-menulistitem">
+            Русский
+          </li><li class="kd-menulistitem">
+            српски
+          </li><li class="kd-menulistitem">
+            slovenský
+          </li><li class="kd-menulistitem">
+            Slovenščina
+          </li><li class="kd-menulistitem">
+            español
+          </li><li class="kd-menulistitem">
+            Español (América Latina)
+          </li><li class="kd-menulistitem">
+            svenska
+          </li><li class="kd-menulistitem">
+            ภาษาไทย
+          </li><li class="kd-menulistitem">
+            Türkçe
+          </li><li class="kd-menulistitem">
+            Українська
+          </li><li class="kd-menulistitem">
+            Tiếng Việt
+          </li></ul><script>
+    var dataLayer = [{"scriptsafe": null, "projectName": "QPX Express API", "language": {"requested": "en", "served": "en"}, "signedIn": "True", "internalUser": "False"}];
+    </script><span id="devsite-request-elapsed" data-request-elapsed="538.359880447"></span>
+</body></html>
