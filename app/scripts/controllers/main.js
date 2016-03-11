@@ -25,6 +25,33 @@ angular.module('flightFareApp')
     }
 	$scope.formData.toDt.setDate($scope.formData.fromDt.getDate() + 3);
 
+  function formatTripOption(data){
+
+    data.trips.tripOption.forEach(function(trip){
+      trip.slice.forEach(function(slice){
+        slice.segment.forEach(function(segment){
+
+          data.trips.data.carrier.forEach(function(el){
+            if(el.code==segment.flight.carrier)
+              segment.flight.carrierName = el.name
+          })
+
+          segment.leg.forEach(function(leg){
+            data.trips.data.airport.forEach(function(airport){
+              if(leg.origin==airport.code)
+                leg.originName = airport.name;
+              if(leg.destination == airport.code)
+                leg.destinationName = airport.name;
+            })
+          })
+
+        })
+      })
+    })
+
+    return data.trips.tripOption
+  }
+
 	$scope.searchFlight = function(){
 
     var params=
@@ -61,19 +88,19 @@ angular.module('flightFareApp')
         }
       }
 
-
-    $http.post("https://www.googleapis.com/qpxExpress/v1/trips/search?key="+qpxKey,params )
-    .then(
-      function(res){
-        alert(JSON.stringify(res))
-        /*
-            {"data":{"kind":"qpxExpress#tripsSearch","trips":{"kind":"qpxexpress#tripOptions","requestId":"DkpFTCAMUuUlcSmCD0Np0B","data":{"kind":"qpxexpress#data"}}},"status":200,"config":{"method":"POST","transformRequest":[null],"transformResponse":[null],"url":"https://www.googleapis.com/qpxExpress/v1/trips/search?key=KEY HERE","data":{"request":{"passengers":{"adultCount":1},"slice":[{"origin":"MIA","destination":"BOS","date":"2016-02-19"},{"origin":"BOS","destination":"MIA","date":"2016-02-22"}]}},"headers":{"Accept":"application/json, text/plain, ","Content-Type":"application/json;charset=utf-8"}},"statusText":"OK"}"
-        */
-        
-      },
-      function(res){
-        alert(JSON.stringify(res))}
-    )
+    // $http.post("https://www.googleapis.com/qpxExpress/v1/trips/search?key="+qpxKey,params )
+    // .then(
+    //   function(res){
+    //     alert(JSON.stringify(res))
+    //   },
+    //   function(res){
+    //     alert(JSON.stringify(res))}
+    // )
 	}
+    var data = formatTripOption(mockup);
+    console.dir(data)
+    $scope.trips= data;
 
   });
+
+

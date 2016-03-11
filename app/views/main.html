@@ -28,16 +28,26 @@
       </div>
     </div>
   </form>
-
-  <div id="results" ng-if="results && results.length">
+  {{data.kind}}
+  <div id="results" ng-if="trips && trips.length">
       <table class="table table-hover">
         <tbody>
-          <tr ng-repeat="res in results">
+          <tr ng-repeat="trip in trips" ng-id="trip.id">
+
             <td>
-                {{res.departureTime}}@{{res.origin}}-->{{res.arrivalTime}}@{{res.destination}} ({{res.duration}} min)<br/>
+                <div ng-repeat="sl in trip.slice">
+                  <div ng-repeat="seg in sl.segment" ng-id="seg.id">
+                    <span uib-tooltip="{{seg.flight.carrierName}}">{{seg.flight.carrier+" "+seg.flight.number}}</span>
+                    <span>
+                      <span ng-repeat="leg in seg.leg">
+                        <div uib-tooltip="{{leg.originName}}">{{leg.origin}}: {{leg.departureTime}}</div>
+                        <div uib-tooltip="{{leg.destinationName}}">{{leg.destination+" "+leg.destinationTerminal}}: {{leg.arrivalTime}}</div>
+                      </span>
+                    </span>
+                  </div>
+                <div>
             </td>
-            <td>{{res.carrier}} {{res.flightNumber}}</td>
-            <td>{{res.price}}</td>
+            <td>{{trip.saleTotal}}</td>
           </tr>
         </tbody>
       </table>
